@@ -6,20 +6,16 @@
         <title>Houdini Hack Proof of Concept</title>
         <script language="javascript" src="qwebchannel.js"></script>
         <style>
-            .undetected {
-                color: grey;
-            }
-        
-            .hacked {
-                color: red;
-                font-weight:bold;
-            }
+            ul {list-style:none}
+            .hacked {font-weight:bold}
+            .hacked span {color: red}
+            .undetected span {color: rgb(163, 163, 163)}
         </style>
     </head>
     <body>
         <button type="button" id="getlogin" onclick="hack_logins()">Hack Logins</button>
         <button type="button" id="createfile" onclick="create_file()">Create File on Desktop</button>
-        <p id="result"></p>
+        <ul id="result"></ul>
         <script src="scripts.js"></script>
     </body>
 </html>
