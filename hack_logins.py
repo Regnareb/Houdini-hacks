@@ -16,9 +16,9 @@ elif platform.system() == 'Linux':
 result = ''
 for platform, path in PATHS.items():
     if not os.path.exists(path):
-        result += '<li class="undetected"><span>{}: Not Detected</span></li>'
+        result += '<li class="undetected">{}: <span>Not Detected</span></li>'.format(platform)
     else:
-        result += '<li class="hacked"><span>All logins hackable</span></li>'
+        result += '<li class="hacked">{}: <span>All logins hackable</span></li>'.format(platform)
 
 filepath = tempfile.gettempdir() + '/houdini_hacked.txt'
 with open(filepath, 'w') as f:
